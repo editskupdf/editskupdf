@@ -1392,124 +1392,8 @@ async function processPDF() {
   setLoadingState(false);
 }
 
-// function displayStockArray() {
-//   const resultsDiv = document.getElementById('results');
-  
-//   // Define the custom sort order
-//   const sortOrder = [
-//     "1+1", "1+2", "fitted", "60x78", "36x78", "72x72",
-//     "Dohar Single", "Dohar", "Set", 
-//     "Com Double", "Com Single"
-//   ];
-  
-//   // Filter out items with zero quantity
-//   const filteredStock = Object.entries(stockArray).filter(([item, qty]) => qty > 0);
-  
-//   // Sort according to the custom order
-//   filteredStock.sort(([itemA], [itemB]) => {
-//     const indexA = sortOrder.findIndex(order => itemA.toLowerCase().includes(order.toLowerCase()));
-//     const indexB = sortOrder.findIndex(order => itemB.toLowerCase().includes(order.toLowerCase()));
-    
-//     // If both items match the sort order, use their order index
-//     if (indexA !== -1 && indexB !== -1) {
-//       return indexA - indexB;
-//     }
-    
-//     // If only one matches, put the matching one first
-//     if (indexA !== -1) return -1;
-//     if (indexB !== -1) return 1;
-    
-//     // If neither matches, sort alphabetically
-//     return itemA.localeCompare(itemB);
-//   });
-  
-//   let html = '<h3><i class="fas fa-chart-bar"></i> Stock Summary</h3>';
-  
-//   if (filteredStock.length === 0) {
-//     html += '<div class="no-items"><i class="fas fa-info-circle"></i> No items with quantity greater than 0</div>';
-//   } 
-//   // else {
-//   //   // Create copyable text format
-//   //   let copyText = "📦 Stock Summary:\n";
-//   //   for (const [stockItem, quantity] of filteredStock) {
-//   //     copyText += `• ${stockItem} -- ${quantity}\n`;
-//   //   }
-    
-//   //   html += '<div class="stock-grid">';
-//   //   for (const [stockItem, quantity] of filteredStock) {
-//   //     html += `
-//   //       <div class="stock-item">
-//   //         <span class="stock-name">${stockItem}</span>
-//   //         <span class="stock-quantity">${quantity}</span>
-//   //       </div>
-//   //     `;
-//   //   }
-//   //   html += '</div>';
-    
-//   //   // Add copyable text area
-//   //   html += `
-//   //     <div class="copy-section">
-//   //       <h4><i class="fas fa-copy"></i> Copy for WhatsApp</h4>
-//   //       <textarea id="copyText" class="copy-textarea" readonly>${copyText}</textarea>
-//   //       <button class="copy-btn" onclick="copyToClipboard()">
-//   //         <i class="fas fa-copy"></i> Copy Text
-//   //       </button>
-//   //     </div>
-//   //   `;
-//   // }
-//   else {
-//   // Define category patterns and labels
-//   const categories = [
-//     { label: "(1+1)-", prefix: "1\\+1" },
-//     { label: "(1+2)-", prefix: "1\\+2" },
-//     { label: "(72x78)-", prefix: "Fitted" },
-//     { label: "(60x78)-", prefix: "60x78" },
-//     { label: "(36x78)-", prefix: "36x78" },
-//     { label: "(72x72)-", prefix: "72x72" },
-//     { label: "(S/b Dohar)-", prefix: "S/b Dohar" },
-//     { label: "(Dohar)-", prefix: "Dohar" },
-//     { label: "(Dohar2Pc)-", prefix: "Dohar2Pc" },
-//     { label: "(Set)-", prefix: "Set" },
-//     { label: "(Com Double)-", prefix: "Com Double" },
-//     { label: "(Com Single)-", prefix: "Com Single" }
-//   ];
 
-//   // Group items by category
-//   let grouped = {};
-//   categories.forEach(cat => grouped[cat.label] = []);
-
-//   for (const [stockItem, quantity] of filteredStock) {
-//     for (const cat of categories) {
-//       const regex = new RegExp("^" + cat.prefix, "i");
-//       if (regex.test(stockItem)) {
-//         grouped[cat.label].push({
-//           name: stockItem.replace(regex, "").trim(),
-//           qty: quantity
-//         });
-//         break;
-//       }
-//     }
-//   }
-
-//   // Build the copyText
-//   let copyText = "📦 Stock Summary:\n";
-//   for (const cat of categories) {
-//     if (grouped[cat.label].length > 0) {
-//       copyText += `${cat.label}\n`;
-//       grouped[cat.label].forEach(item => {
-//         copyText += `• ${item.name} -- ${item.qty}\n`;
-//       });
-//       copyText += "\n";
-//     }
-//   }
-// }
-  
-//   resultsDiv.innerHTML = html;
-//   resultsDiv.classList.add('show');
-  
-//   console.log('Filtered and Sorted Stock Array:', filteredStock);
-//   console.log('Full Stock Array:', stockArray);
-// }
+// Modified displayStockArray function with password protection
 function displayStockArray() {
   const resultsDiv = document.getElementById('results');
 
@@ -1541,70 +1425,82 @@ function displayStockArray() {
   if (filteredStock.length === 0) {
     html += '<div class="no-items"><i class="fas fa-info-circle"></i> No items with quantity greater than 0</div>';
   } else {
-    // Category order + match patterns (anchor at start, case-insensitive)
-    const categories = [
-      { label: '(1+1)-',       pattern: /^1\+1\s*/i },
-      { label: '(1+2)-',       pattern: /^1\+2\s*/i },
-      { label: '(72x78)-',     pattern: /^Fitted\s*/i },        // "Fitted ..." -> 72x78
-      { label: '(60x78)-',     pattern: /^60x78\s*/i },
-      { label: '(36x78)-',     pattern: /^36x78\s*/i },
-      { label: '(72x72)-',     pattern: /^72x72\s*/i },
-      { label: '(S/b Dohar)-', pattern: /^S\/b\s*Dohar\s*/i },
-      { label: '(Dohar)-',     pattern: /^Dohar\s*/i },
-      { label: '(Dohar2Pc)-',  pattern: /^Dohar2Pc\s*/i },
-      { label: '(Set)-',       pattern: /^Set\s*/i },
-      { label: '(Com Double)-',pattern: /^Com\s*Double\s*/i },
-      { label: '(Com Single)-',pattern: /^Com\s*Single\s*/i },
-    ];
+    // Check password from input field
+    const passwordInput = document.getElementById('passwordInput');
+    const userPassword = passwordInput ? passwordInput.value.trim() : '';
+    const isAuthorized = userPassword === 'Radhasoami';
 
-    // Prepare bins
-    let grouped = Object.fromEntries(categories.map(c => [c.label, []]));
-    const unmatched = [];
+    let copyText = '';
+    
+    if (isAuthorized) {
+      // Category order + match patterns (anchor at start, case-insensitive)
+      const categories = [
+        { label: '(1+1)-',       pattern: /^1\+1\s*/i },
+        { label: '(1+2)-',       pattern: /^1\+2\s*/i },
+        { label: '(72x78)-',     pattern: /^Fitted\s*/i },        // "Fitted ..." -> 72x78
+        { label: '(60x78)-',     pattern: /^60x78\s*/i },
+        { label: '(36x78)-',     pattern: /^36x78\s*/i },
+        { label: '(72x72)-',     pattern: /^72x72\s*/i },
+        { label: '(S/b Dohar)-', pattern: /^S\/b\s*Dohar\s*/i },
+        { label: '(Dohar)-',     pattern: /^Dohar\s*/i },
+        { label: '(Dohar2Pc)-',  pattern: /^Dohar2Pc\s*/i },
+        { label: '(Set)-',       pattern: /^Set\s*/i },
+        { label: '(Com Double)-',pattern: /^Com\s*Double\s*/i },
+        { label: '(Com Single)-',pattern: /^Com\s*Single\s*/i },
+      ];
 
-    // Assign items to bins, stripping the matched prefix
-    for (const [stockItem, quantity] of filteredStock) {
-      let matched = false;
+      // Prepare bins
+      let grouped = Object.fromEntries(categories.map(c => [c.label, []]));
+      const unmatched = [];
 
-      for (const cat of categories) {
-        if (cat.pattern.test(stockItem)) {
-          const nameWithoutPrefix = stockItem.replace(cat.pattern, '').trim();
-          grouped[cat.label].push({ name: nameWithoutPrefix, qty: quantity, original: stockItem });
-          console.log(`[group] MATCH: "${stockItem}" -> ${cat.label} as "${nameWithoutPrefix}" (qty=${quantity})`);
-          matched = true;
-          break;
+      // Assign items to bins, stripping the matched prefix
+      for (const [stockItem, quantity] of filteredStock) {
+        let matched = false;
+
+        for (const cat of categories) {
+          if (cat.pattern.test(stockItem)) {
+            const nameWithoutPrefix = stockItem.replace(cat.pattern, '').trim();
+            grouped[cat.label].push({ name: nameWithoutPrefix, qty: quantity, original: stockItem });
+            console.log(`[group] MATCH: "${stockItem}" -> ${cat.label} as "${nameWithoutPrefix}" (qty=${quantity})`);
+            matched = true;
+            break;
+          }
+        }
+
+        if (!matched) {
+          unmatched.push({ name: stockItem, qty: quantity });
+          console.warn(`[group] UNMATCHED: "${stockItem}" (qty=${quantity})`);
         }
       }
 
-      if (!matched) {
-        unmatched.push({ name: stockItem, qty: quantity });
-        console.warn(`[group] UNMATCHED: "${stockItem}" (qty=${quantity})`);
+      // Build the WhatsApp copy text from bins (skip empty categories)
+      copyText = "📦 Stock Summary:\n";
+      for (const cat of categories) {
+        const items = grouped[cat.label];
+        console.log(`[copyText] ${cat.label} count:`, items.length);
+        if (!items.length) continue;
+
+        copyText += `${cat.label}\n`;
+        for (const item of items) {
+          copyText += `• ${item.name} -- ${item.qty}\n`;
+        }
+        copyText += `\n`;
       }
-    }
 
-    // Build the WhatsApp copy text from bins (skip empty categories)
-    let copyText = "📦 Stock Summary:\n";
-    for (const cat of categories) {
-      const items = grouped[cat.label];
-      console.log(`[copyText] ${cat.label} count:`, items.length);
-      if (!items.length) continue;
-
-      copyText += `${cat.label}\n`;
-      for (const item of items) {
-        copyText += `• ${item.name} -- ${item.qty}\n`;
+      if (unmatched.length) {
+        console.log('[group] Unmatched items (excluded from copyText):', unmatched);
       }
-      copyText += `\n`;
+    } else {
+      // If password is wrong, show message in textarea
+      copyText = isAuthorized ? '' : 'Not calculated';
     }
 
-    if (unmatched.length) {
-      console.log('[group] Unmatched items (excluded from copyText):', unmatched);
-    }
-
-    // Copy section with the new grouped copyText
+    // Copy section with password-protected content
     html += `
       <div class="copy-section">
         <h4><i class="fas fa-copy"></i> Copy for WhatsApp</h4>
         <textarea id="copyText" class="copy-textarea" readonly>${copyText.trim()}</textarea>
-        <button class="copy-btn" onclick="copyToClipboard()">
+        <button class="copy-btn" onclick="copyToClipboard()" ${!isAuthorized ? 'disabled' : ''}>
           <i class="fas fa-copy"></i> Copy Text
         </button>
       </div>
