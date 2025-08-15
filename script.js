@@ -1453,12 +1453,12 @@ const skuToStockMapping = {
     "Pillow BL": 8
   },
   '2pc GL,PL,GL': {
-    "Pillow GL": 2
-    "Pillow PL": 2
+    "Pillow GL": 2,
+    "Pillow PL": 2,
     "Pillow BL": 2
   },
   '2pc PL, BL': {
-    "Pillow PL": 2
+    "Pillow PL": 2,
     "Pillow BL": 2
   },
   '6pc Perth': {
