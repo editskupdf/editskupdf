@@ -2517,7 +2517,7 @@ async function processPDF() {
             }
           }
           
-          console.log(`Found SKU: ${sku}, Quantity: ${qty}`);
+          // console.log(`Found SKU: ${sku}, Quantity: ${qty}`);
           
           if (qty) {
             const orderQty = parseInt(qty);
@@ -2528,13 +2528,13 @@ async function processPDF() {
             
             // Process stock requirements based on SKU mapping
             if (skuToStockMapping[sku]) {
-              console.log(`Processing SKU: ${sku} with quantity: ${orderQty}`);
+              // console.log(`Processing SKU: ${sku} with quantity: ${orderQty}`);
               
               for (const [stockItem, baseQty] of Object.entries(skuToStockMapping[sku])) {
                 const totalToAdd = baseQty * orderQty;
                 stockArray[stockItem] += totalToAdd;
                 
-                console.log(`Added ${totalToAdd} to ${stockItem} (base: ${baseQty} * order qty: ${orderQty})`);
+                // console.log(`Added ${totalToAdd} to ${stockItem} (base: ${baseQty} * order qty: ${orderQty})`);
               }
             } else {
               console.log(`No stock mapping found for SKU: ${sku}`);
@@ -2663,9 +2663,6 @@ function displayStockArray() {
     return itemA.localeCompare(itemB);
   });
 
-  console.log('[displayStockArray] filteredStock count:', filteredStock.length);
-  console.log('[displayStockArray] filteredStock:', filteredStock);
-
   let html = '';
 
   if (filteredStock.length === 0) {
@@ -2680,6 +2677,8 @@ function displayStockArray() {
     
     if (isAuthorized) {
       // Category order + match patterns (anchor at start, case-insensitive)
+      console.log('[displayStockArray] filteredStock count:', filteredStock.length);
+      console.log('[displayStockArray] filteredStock:', filteredStock);
       const categories = [
         { label: '(1+1)-',       pattern: /^1\+1\s*/i },
         { label: '(1+2)-',       pattern: /^1\+2\s*/i },
