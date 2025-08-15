@@ -1782,7 +1782,7 @@ const skuToStockMapping = {
     "Pillow Box": 2,
     "Pillow Dil": 2,
     "Pillow Grey": 2,
-    "Pillow Bridge": 2
+    "Pillow Bridge Diam": 2
   },
   '2pc-box+foot+gp+pista': {
     "Pillow Box": 2,
@@ -1792,14 +1792,14 @@ const skuToStockMapping = {
   },
   '2pc-box+lovely+navy+pista': {
     "Pillow Box": 2,
-    "Pillow Bridge": 2,
+    "Pillow Bridge Diam": 2,
     "Pillow Navy": 2,
     "Pillow Pista": 2
   },
   '2pc-box+gp+lovely+navy': {
     "Pillow Box": 2,
     "Pillow Grey": 2,
-    "Pillow Bridge": 2,
+    "Pillow Bridge Diam": 2,
     "Pillow Navy": 2
   },
   '2pc-box+diam+gp+pista': {
@@ -1824,12 +1824,12 @@ const skuToStockMapping = {
     "Pillow Box": 2,
     "Pillow Dil": 2,
     "Pillow Foot": 2,
-    "Pillow Bridge": 2
+    "Pillow Bridge Diam": 2
   },
   '2pc-box+dil+lovely+navy': {
     "Pillow Box": 2,
     "Pillow Dil": 2,
-    "Pillow Bridge": 2,
+    "Pillow Bridge Diam": 2,
     "Pillow Navy": 2
   },
   '2pc-box+foot+lovely+navy': {
@@ -1842,7 +1842,7 @@ const skuToStockMapping = {
     "Pillow Box": 2,
     "Pillow Foot": 2,
     "Pillow Grey": 2,
-    "Pillow Bridge": 2
+    "Pillow Bridge Diam": 2
   },
   '2pc-box+dil+foot+pista': {
     "Pillow Box": 2,
@@ -1869,7 +1869,7 @@ const skuToStockMapping = {
     "Pillow Navy": 6
   },
 '4 pc lovely': {
-    "Pillow Bridge": 4
+    "Pillow Bridge Diam": 4
   },
 '6 pc box': {
     "Pillow Box": 6
@@ -1878,7 +1878,7 @@ const skuToStockMapping = {
     "Pillow Foot": 6
   },
 '8 pc lovely': {
-    "Pillow Bridge": 8
+    "Pillow Bridge Diam": 8
   },
 '8 pc box': {
     "Pillow Box": 8
@@ -1902,7 +1902,7 @@ const skuToStockMapping = {
     "Pillow Dil": 8
   },
 '6 pc lovely': {
-    "Pillow Bridge": 6
+    "Pillow Bridge Diam": 6
   },
 '8 pc foot': {
     "Pillow Foot": 8
