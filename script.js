@@ -2897,7 +2897,7 @@ function displayStockArray() {
   // Define the custom sort order (unchanged)
   const sortOrder = [
     "1+1", "1+2", "108","Fitted", "60x78", "36x78", "72x72",
-    "Dohar Single", "Dohar", "Set",
+    "Dohar Single", "Dohar", "Pillow", "Set",
     "Com Double", "Com Single"
   ];
 
