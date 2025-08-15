@@ -267,17 +267,17 @@ let stockArray = {
 "Set Wine": 0,
 "Set Dil": 0,
 "Set Box": 0,
-"S/b com Pink": 0,
-"S/b com Norway": 0,
-"S/b com Confetti": 0,
-"S/b com GL": 0,
-"S/b com PL": 0,
-"S/b com Lovely": 0,
-"S/b com Distorted": 0,
-"S/b com Ecru": 0,
-"S/b com Box": 0,
-"S/b com Pulmeria": 0,
-"S/b com Dil": 0
+"Com Single Pink": 0,
+"Com Single Norway": 0,
+"Com Single Confetti": 0,
+"Com Single GL": 0,
+"Com Single PL": 0,
+"Com Single Lovely": 0,
+"Com Single Distorted": 0,
+"Com Single Ecru": 0,
+"Com Single Box": 0,
+"Com Single Pulmeria": 0,
+"Com Single Dil": 0
 };
 
 // Hardcoded SKU to stock mapping
@@ -1145,37 +1145,37 @@ const skuToStockMapping = {
     "Set Box": 1
   },
   'pink s/b com': {
-    "S/b com Pink": 1
+    "Com Single Pink": 1
   },
   'norway s/b com': {
-    "S/b com Norway": 1
+    "Com Single Norway": 1
   },
   'confetti s/b com': {
-    "S/b com Confetti": 1
+    "Com Single Confetti": 1
   },
   'grey lehar s/b com only': {
-    "S/b com GL": 1
+    "Com Single GL": 1
   },
   'pink lehar s/b com only': {
-    "S/b com PL": 1
+    "Com Single PL": 1
   },
   'lovely s/b comforter onlyy': {
-    "S/b com Lovely": 1
+    "Com Single Lovely": 1
   },
   'distorted s/b com only': {
-    "S/b com Distorted": 1
+    "Com Single Distorted": 1
   },
   'ecru white s/b com only': {
-    "S/b com Ecru": 1
+    "Com Single Ecru": 1
   },
   'box s/b com only': {
-    "S/b com Box": 1
+    "Com Single Box": 1
   },
   'white floral s/b com only': {
-    "S/b com Pulmeria": 1
+    "Com Single Pulmeria": 1
   },
   'dil s/b com only': {
-    "S/b com Dil": 1
+    "Com Single Dil": 1
   },
   '4pc Bridge Diam': {
     "Pillow Bridge Diam": 4
@@ -2421,6 +2421,90 @@ const skuToStockMapping = {
   },
   'new triangle comforter only': {
     "Com Double Berlin": 1
+  },
+  'cars 1+2': {
+    "1+2 Car": 1
+  },
+  'Fish 1+2': {
+    "1+2 Fish": 1
+  },
+  'teddy 1+2': {
+    "1+2 Teddy": 1
+  },
+  'grey horse 1+2': {
+    "1+2 Horse": 1
+  },
+  'grey horse 1+1': {
+    "1+1 Horse": 1
+  },
+  'cars 1+1': {
+    "1+1 Car": 1
+  },
+  'teddy 1+1': {
+    "1+1 Teddy": 1
+  },
+  'fish 1+1': {
+    "1+1 Fish": 1
+  },
+  '2 pillow cover grey horse': {
+    "Pillow Horse": 2
+  },
+  '2 pillow cover cars': {
+    "Pillow Car": 2
+  },
+  '2 pillow cover teddy': {
+    "Pillow Teddy": 2
+  },
+  '2 Pillow cover fish': {
+    "Pillow Fish": 2
+  },
+  '4 pillow cover fish': {
+    "Pillow Fish": 4
+  },
+  '4 pillow cover grey horse': {
+    "Pillow Horse": 4
+  },
+  '4 pillow cover teddy': {
+    "Pillow Teddy": 4
+  },
+  '4 pillow cover cars': {
+    "Pillow Car": 4
+  },
+  'fish s/b com only': {
+    "Com Single Fish": 1
+  },
+  'cars s/b com only': {
+    "Com Single Car": 1
+  },
+  'teddy s/b com only': {
+    "Com Single Teddy": 1
+  },
+  'horse s/b com only': {
+    "Com Single Horse": 1
+  },
+  'car com only': {
+    "Com Double Car": 1
+  },
+  'fish com only': {
+    "Com Double Fish": 1
+  },
+  'grey donkey com only': {
+    "Com Double Horse": 1
+  },
+  'teddy com only': {
+    "Com Double Teddy": 1
+  },
+  'car com set': {
+    "Set Car": 1
+  },
+  'teddy com set': {
+    "Set Teddy": 1
+  },
+  'fish com set': {
+    "Set Fish": 1
+  },
+  'grey donkey com set': {
+    "Set Horse": 1
   }
 
   // Add more SKU mappings here as needed
