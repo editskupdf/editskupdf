@@ -2394,6 +2394,12 @@ const skuToStockMapping = {
   },
   'grey patti 1+2': {
     "1+2 Grey": 1
+  },
+  'Berlin 108x108': {
+    "108 Berlin": 1
+  },
+  'Tokyo 108x108': {
+    "108 Tokyo": 1
   }
 
   // Add more SKU mappings here as needed
@@ -2618,7 +2624,7 @@ function displayStockArray() {
 
   // Define the custom sort order (unchanged)
   const sortOrder = [
-    "1+1", "1+2", "fitted", "60x78", "36x78", "72x72",
+    "1+1", "1+2", "108","Fitted", "60x78", "36x78", "72x72",
     "Dohar Single", "Dohar", "Set",
     "Com Double", "Com Single"
   ];
@@ -2656,6 +2662,7 @@ function displayStockArray() {
       const categories = [
         { label: '(1+1)-',       pattern: /^1\+1\s*/i },
         { label: '(1+2)-',       pattern: /^1\+2\s*/i },
+        { label: '(108)-',     pattern: /^108\s*/i },
         { label: '(72x78)-',     pattern: /^Fitted\s*/i },        // "Fitted ..." -> 72x78
         { label: '(60x78)-',     pattern: /^60x78\s*/i },
         { label: '(36x78)-',     pattern: /^36x78\s*/i },
