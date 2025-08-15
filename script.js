@@ -2738,7 +2738,7 @@ function displayStockArray() {
       }
     } else {
       // If password is wrong, show message in textarea
-      copyText = isAuthorized ? '' : 'Not calculated';
+      copyText = isAuthorized ? '' : 'Pdf Processed';
     }
 
     // Copy section with password-protected content
