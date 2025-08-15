@@ -2400,6 +2400,27 @@ const skuToStockMapping = {
   },
   'Tokyo 108x108': {
     "108 Tokyo": 1
+  },
+  'blue sunflower comforter only': {
+    "Com Double Leaves": 1
+  },
+  'pink blue lining comforter only': {
+    "Com Double SS": 1
+  },
+  'blue sunflower comforter set': {
+  "Set Leaves": 1
+  },
+  'football comforter only': {
+    "Com Double Foot": 1
+  },
+  'football comforter set': {
+    "Set Foot": 1
+  },
+  'new triangle comforter set': {
+    "Set Berlin": 1
+  },
+  'new triangle comforter only': {
+    "Com Double Berlin": 1
   }
 
   // Add more SKU mappings here as needed
