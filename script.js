@@ -2173,6 +2173,227 @@ const skuToStockMapping = {
   },
 'royal s/b dohar': {
     "S/b Dohar Royal": 1
+  },
+'Purple 1+1': {
+    "1+1 Purple": 1
+  },
+'Florica 1+1': {
+    "1+1 Florica": 1
+  },
+'Harmony 1+1': {
+    "1+1 Harmony": 1
+  },
+'Graphix 1+1': {
+    "1+1 Graphix": 1
+  },
+'Yellow floral 1+1': {
+    "1+1 Yellow Floral": 1
+  },
+'CubeBrown 1+1': {
+    "1+1 CubeBrown": 1
+  },
+'GeoFusion 1+1': {
+    "1+1 Geofusion": 1
+  },
+'Beige 1+1': {
+    "1+1 Beige": 1
+  },
+'Olive 1+1': {
+    "1+1 Olive": 1
+  },
+'Silver Single Sheet': {
+    "1+1 Silver": 1
+  },
+'Linear Single Sheet': {
+    "1+1 Linear": 1
+  },
+'Cube Single Sheet': {
+    "1+1 Cube": 1
+  },
+'Vintage Single Sheet': {
+    "1+1 Vintage": 1
+  },
+'Cambridge 1+1': {
+    "1+1 Purple": 1
+  },
+'Perth 1+1': {
+    "1+1 Perth": 1
+  },
+'Toronto 1+1': {
+    "1+1 Toronto": 1
+  },
+'Sydney 1+1': {
+    "1+1 Sydney": 1
+  },
+'Vegas 1+1': {
+    "1+1 Vegas": 1
+  },
+'Denver 1+1': {
+    "1+1 Denver": 1
+  },
+'Tokyo 1+1': {
+    "1+1 Tokyo": 1
+  },
+'confetti 1+1(heavy)': {
+    "1+1 Confetti": 1
+  },
+'norway 1+1 (heavy)': {
+    "1+1 Norway": 1
+  },
+'pink 1+1(heavy)': {
+    "1+1 Pink": 1
+  },
+'lovely 1+1 ||': {
+    "1+1 Lovely": 1
+  },
+'Pulmeria 1+1': {
+    "1+1 Pulmeria": 1
+  },
+'chino grey 1+1 ||': {
+    "1+1 Chino": 1
+  },
+'dil 1+1,,//': {
+    "1+1 Dil": 1
+  },
+'leaves 1+1': {
+    "1+1 Leaves": 1
+  },
+'grey 1+1': {
+    "1+1 Grey": 1
+  },
+'box+pista 1+1': {
+    "1+1 Box": 1,
+    "1+1 Pista": 1,
+  },
+  'royal 1+1,,//': {
+    "1+1 Royal": 1
+  },
+  'wine 1+1,,//': {
+    "1+1 Wine": 1
+  },
+  'Box + foot 1+1..': {
+    "1+1 Box": 1,
+    "1+1 Foot": 1,
+  },
+  'Do - Diamond 1+1': {
+    "1+1 Diam": 2
+  },
+  'Do - w.b 1+1': {
+    "1+1 WB": 2
+  },
+  'Do - Dil 1+1': {
+    "1+1 Dil": 2
+  },
+  'dil+diamond 1+1': {
+    "1+1 Dil": 1,
+    "1+1 Diam": 1
+  },
+  'Grey patta + dil': {
+    "1+1 Dil": 1,
+    "1+1 Grey": 1
+  },
+  'dil + football (1+1) combo': {
+    "1+1 Dil": 1,
+    "1+1 Foot": 1
+  },
+  'Purple 1+2': {
+    "1+2 Purple": 1
+  },
+  'Florica 1+2': {
+    "1+2 Florica": 1
+  },
+  'Harmony 1+2': {
+    "1+2 Harmony": 1
+  },
+  'Graphix 1+2': {
+    "1+2 Graphix": 1
+  },
+  'Yellow floral 1+2': {
+    "1+2 Yellow Floral": 1
+  },
+  'CubeBrown 1+2': {
+    "1+2 Cubebrown": 1
+  },
+  'GeoFusion 1+2': {
+    "1+2 Geofusion": 1
+  },
+  'Beige 1+2': {
+    "1+2 Beige": 1
+  },
+  'Olive 1+2': {
+    "1+2 Olive": 1
+  },
+  'Silver Sheet': {
+    "1+2 Silver": 1
+  },
+  'Cube Sheet': {
+    "1+2 Cube": 1
+  },
+  'Linear Sheet': {
+    "1+2 Linear": 1
+  },
+  'Vintage Sheet': {
+  "1+2 Vintage": 1
+  },
+  'Cambridge 1+2': {
+    "1+2 Cambridge": 1
+  },
+  'Perth 1+2': {
+    "1+2 Perth": 1
+  },
+  'Sydney 1+2': {
+    "1+2 Sydney": 1
+  },
+  'Toronto 1+2': {
+    "1+2 Toronto": 1
+  },
+  'Denver 1+2': {
+    "1+2 Denver": 1
+  },
+  'Vegas 1+2': {
+    "1+2 Vegas": 1
+  },
+  'Tokyo 1+2': {
+    "1+2 Tokyo": 1
+  },
+  'confetti 1+2 (heavy)': {
+    "1+2 Confetti": 1
+  },
+  'norway 1+2 (heavy)': {
+    "1+2 Norway": 1
+  },
+  'pink 1+2 (heavy)': {
+    "1+2 Pink": 1
+  },
+  'blue flower 1+2 (heavy)': {
+    "1+2 Confetti": 1
+  },
+  'pulmeria 1+2': {
+    "1+2 Pulmeria": 1
+  },
+  'Yellow Slice 1+2,,': {
+    "1+2 Yellow Slice": 1
+  },
+  'wine 1+2,,//': {
+    "1+2 Wine": 1
+  },
+  'green leaves 1+2/': {
+    "1+2 Leaves": 1
+  },
+  'chino grey 1+2/': {
+    "1+2 Chino": 1
+  },
+  'lovely 1+2': {
+    "1+2 Lovely": 1
+  },
+  'royal blue 1+2': {
+    "1+2 Royal": 1
+  },
+  'dil 1+2': {
+    "1+2 Dil": 1
+  },
+  'grey patti 1+2': {
+    "1+2 Grey": 1
   }
 
   // Add more SKU mappings here as needed
