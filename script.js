@@ -1176,6 +1176,578 @@ const skuToStockMapping = {
   },
   'dil s/b com only': {
     "S/b com Dil": 1
+  },
+  '4pc Bridge Diam': {
+    "Pillow Bridge Diam": 4
+  },
+  '4pc Yellow floral': {
+    "Pillow Yellow Floral": 4
+  },
+  '6pc Beige': {
+    "Pillow Beige": 6
+  },
+  '6pc BL': {
+    "Pillow BL": 6
+  },
+  '2pc Vintage': {
+    "Pillow Vintage": 2
+  },
+  '8pc Florica': {
+    "Pillow Florica": 8
+  },
+  '2pc PL, GL': {
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2pc GL, BL': {
+    "Pillow GL": 2,
+    "Pillow BL": 2
+  },
+  '4pc Wine': {
+  "Pillow Wine": 4
+  },
+  '2pc SS': {
+    "Pillow SS": 2
+  },
+  '4pc Denver': {
+    "Pillow Denver": 2
+  },
+  '6pc Florica': {
+    "Pillow Florica": 6
+  },
+  '2pc Perth': {
+    "Pillow Perth": 2
+  },
+  '6pc Harmony': {
+    "Pillow Harmony": 6
+  },
+  '8pc SS': {
+    "Pillow SS": 8
+  },
+  '6pc Vintage': {
+    "Pillow Vintage": 6
+  },
+  '4pc Sydney': {
+    "Pillow Sydney": 4
+  },
+  '8pc Silver': {
+    "Pillow Silver": 8
+  },
+  '8pc Olive': {
+    "Pillow Olive": 8
+  },
+  '6pc Cambridge': {
+    "Pillow Cambridge": 2
+  },
+  '8pc GL': {
+    "Pillow GL": 8
+  },
+  '6pc Grey': {
+    "Pillow Grey": 2
+  },
+  '6pc Yellow floral': {
+    "Pillow Yellow Floral": 6
+  },
+  '8pc Queensland': {
+    "Pillow Queensland": 8
+  },
+  '6pc Olive': {
+    "Pillow Olive": 6
+  },
+  '4pc CubeBrown': {
+    "Pillow Cubebrown": 4
+  },
+  '8pc Dust': {
+    "Pillow Dust": 8
+  },
+  '8pc Vintage': {
+    "Pillow Vintage": 8
+  },
+  '2pc Harmony': {
+    "Pillow Harmony": 2
+  },
+  '6pc GL': {
+    "Pillow GL": 6
+  },
+  '6pc Denver': {
+    "Pillow Denver": 6
+  },
+  '8pc Grey': {
+    "Pillow Grey": 8
+  },
+  '6pc Cube': {
+    "Pillow Cube": 6
+  },
+  '4pc GL': {
+    "Pillow GL": 4
+  },
+  '2pc Cube': {
+    "Pillow Cube": 2
+  },
+  '8pc PL': {
+    "Pillow PL": 8
+  },
+  '4pc Silver': {
+    "Pillow Silver": 4
+  },
+  '4pc Linear': {
+    "Pillow Linear": 4
+  },
+  '6pc Linear': {
+    "Pillow Linear": 6
+  },
+  '8pc Cube': {
+    "Pillow Cube": 8
+  },
+  '2pc Florica': {
+    "Pillow Florica": 2
+  },
+  '8pc Bridge Diam': {
+    "Pillow Bridge Diam": 8
+  },
+  '6pc SS': {
+    "Pillow SS": 6
+  },
+  '2pc Beige': {
+    "Pillow Beige": 2
+  },
+  '8pc Linear': {
+    "Pillow Linear": 8
+  },
+  '4pc SS': {
+    "Pillow SS": 4
+  },
+  '4pc Tokyo': {
+    "Pillow Tokyo": 4
+  },
+  '4pc PL': {
+    "Pillow PL": 4
+  },
+  '8pc Yellow floral': {
+    "Pillow Yellow Floral": 8
+  },
+  '2pc Dust': {
+    "Pillow Dust": 2
+  },
+  '4pc Olive': {
+    "Pillow Olive": 4
+  },
+  '6pc Silver': {
+    "Pillow Silver": 6
+  },
+  '2pc Cambridge': {
+  "Pillow Cambridge": 2
+  },
+  '6pc Queensland': {
+    "Pillow Queensland": 6
+  },
+  '6pc CubeBrown': {
+    "Pillow Cubebrown": 6
+  },
+  '6pc Graphix': {
+    "Pillow Graphix": 6
+  },
+  '4pc Beige': {
+    "Pillow Beige": 4
+  },
+  '4pc BL': {
+    "Pillow BL": 4
+  },
+  '2pc Denver': {
+    "Pillow Denver": 2
+  },
+  '8pc Cannon': {
+    "Pillow Cannon": 8
+  },
+  '4pc Perth': {
+    "Pillow Perth": 4
+  },
+  '2pc Tokyo': {
+    "Pillow Tokyo": 2
+  },
+  '4pc Cube': {
+    "Pillow Cube": 4
+  },
+  '8pc Beige': {
+    "Pillow Beige": 8
+  },
+  '2pc Graphix': {
+    "Pillow Graphix": 2
+  },
+  '4pc Grey': {
+    "Pillow Grey": 4
+  },
+  '4pc Cambridge': {
+    "Pillow Cambridge": 4
+  },
+  '4pc Cannon': {
+    "Pillow Cannon": 4
+  },
+  '8pc Toronto': {
+    "Pillow Toronto": 8
+  },
+  '6pc Sydney': {
+    "Pillow Sydney": 6
+  },
+  '4pc Toronto': {
+    "Pillow Toronto": 4
+  },
+  '4pc Florica': {
+    "Pillow Florica": 4
+  },
+  '2pc CubeBrown': {
+    "Pillow Cubebrown": 4
+  },
+  '8pc Harmony': {
+    "Pillow Harmony": 8
+  },
+  '4pc Dust': {
+    "Pillow Dust": 4
+  },
+  '8pc CubeBrown': {
+    "Pillow Cubebrown": 8
+  },
+  '4pc Graphix': {
+    "Pillow Graphix": 4
+  },
+  '6pc Cannon': {
+    "Pillow Cannon": 6
+  },
+  '2pc Silver': {
+    "Pillow Silver": 2
+  },
+  '6pc Wine': {
+    "Pillow Wine": 6
+  },
+  '2pc Toronto': {
+    "Pillow Toronto": 2
+  },
+  '8pc Tokyo': {
+    "Pillow Tokyo": 8
+  },
+  '2pc Linear': {
+    "Pillow Linear": 2
+  },
+  '8pc Perth': {
+    "Pillow Perth": 8
+  },
+  '6pc Dust': {
+    "Pillow Dust": 6
+  },
+  '2pc Queensland': {
+    "Pillow Queensland": 2
+  },
+  '6pc Tokyo': {
+    "Pillow Tokyo": 6
+  },
+  '4pc Harmony': {
+    "Pillow Harmony": 4
+  },
+  '6pc Bridge Diam': {
+    "Pillow Bridge Diam": 6
+  },
+  '6pc PL': {
+    "Pillow PL": 6
+  },
+  '8pc BL': {
+    "Pillow BL": 8
+  },
+  '2pc GL,PL,GL': {
+    "Pillow GL": 2
+    "Pillow PL": 2
+    "Pillow BL": 2
+  },
+  '2pc PL, BL': {
+    "Pillow PL": 2
+    "Pillow BL": 2
+  },
+  '6pc Perth': {
+    "Pillow Perth": 6
+  },
+  '6pc Toronto': {
+    "Pillow Toronto": 6
+  },
+  '8pc Cambridge': {
+    "Pillow Cambridge": 8
+  },
+  '2pc Sydney': {
+    "Pillow Sydney": 2
+  },
+  '8pc Graphix': {
+    "Pillow Graphix": 8
+  },
+  '8pc Sydney': {
+    "Pillow Sydney": 8
+  },
+  '2pc Yellow floral': {
+    "Pillow Yellow Floral": 2
+  },
+  '8pc Wine': {
+    "Pillow Wine": 8
+  },
+  '8pc Denver': {
+    "Pillow Denver": 8
+  },
+  '2pc Olive': {
+    "Pillow Olive": 2
+  },
+  '4pc Vintage': {
+    "Pillow Vintage": 4
+  },
+  '4pc Queensland': {
+    "Pillow Queensland": 4
+  },
+  '2pc - dust grey': {
+    "Pillow Dust": 2
+  },
+  '2pc - white floral': {
+    "Pillow Pulmeria": 2
+  },
+  '2 pc peach': {
+    "Pillow Peach": 2
+  },
+  '2 pc - navy square': {
+    "Pillow Navy": 2
+  },
+  '2pc- box': {
+    "Pillow Box": 2
+  },
+  '2pc - diam': {
+    "Pillow Diam": 2
+  },
+  '2 pc - pink floral': {
+    "Pillow Pink Floral": 2
+  },
+  '2 pc - indigo': {
+    "Pillow Indigo": 2
+  },
+  '2 pc - pink lehr': {
+    "Pillow PL": 2
+  },
+  '2 pc - green leaves': {
+    "Pillow Leaves": 2
+  },
+  '2 pc - distorted': {
+    "Pillow Distorted": 2
+  },
+  '2 pc - green': {
+    "Pillow Green": 2
+  },
+  '2 pc - brown': {
+    "Pillow Berlin": 2
+  },
+  '2 pc - grey lehr': {
+    "Pillow GL": 2
+  },
+  '2 pc - lovely': {
+    "Pillow Lovely": 2
+  },
+  '2 pc - cannon': {
+    "Pillow Cannon": 2
+  },
+  '2 pc- wine': {
+    "Pillow Wine": 2
+  },
+  '2 pc - foot': {
+    "Pillow Foot": 2
+  },
+  '2 pc - grey patta': {
+    "Pillow Grey": 2
+  },
+  '2 pc - bridge diamond': {
+    "Pillow Bridge Diam": 2
+  },
+  '2 pc - dil': {
+    "Pillow Dil": 2
+  },
+  '2 pc - brown diam': {
+    "Pillow Brown Diam": 2
+  },
+  '2 pc - moon mist': {
+    "Pillow Moon": 2
+  },
+  '2 pc - royal': {
+    "Pillow Royal": 2
+  },
+  '2pc - foot + sea + pl + gl': {
+    "Pillow Foot": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2pc - box + sea + pl + gl': {
+    "Pillow Box": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2pc - gp + sea + pl + gl': {
+    "Pillow Grey": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2 pc - dil + sea + pl + gl': {
+    "Pillow Dil": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2 pc - love + sea + pl + gl': {
+    "Pillow Lovely": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2pc-diam+sea + pl + gl': {
+    "Pillow Diam": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2 pc - navy + sea + pl + gl': {
+    "Pillow Navy": 2,
+    "Pillow Sea": 2,
+    "Pillow GL": 2,
+    "Pillow PL": 2
+  },
+  '2pc-box+dil+gp+lovely': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Grey": 2,
+    "Pillow Bridge": 2
+  },
+  '2pc-box+foot+gp+pista': {
+    "Pillow Box": 2,
+    "Pillow Foot": 2,
+    "Pillow Grey": 2,
+    "Pillow Pista": 2
+  },
+  '2pc-box+lovely+navy+pista': {
+    "Pillow Box": 2,
+    "Pillow Bridge": 2,
+    "Pillow Navy": 2,
+    "Pillow Pista": 2
+  },
+  '2pc-box+gp+lovely+navy': {
+    "Pillow Box": 2,
+    "Pillow Grey": 2,
+    "Pillow Bridge": 2,
+    "Pillow Navy": 2
+  },
+  '2pc-box+diam+gp+pista': {
+    "Pillow Box": 2,
+    "Pillow Diam": 2,
+    "Pillow Grey": 2,
+    "Pillow Pista": 2
+  },
+  '2pc-box+dil+gp+pista': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Grey": 2,
+    "Pillow Pista": 2
+  },
+  '2pc-box+dil+foot+navy': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Foot": 2,
+    "Pillow Navy": 2
+  },
+  '2pc-box+dil+foot+lovely': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Foot": 2,
+    "Pillow Bridge": 2
+  },
+  '2pc-box+dil+lovely+navy': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Bridge": 2,
+    "Pillow Navy": 2
+  },
+  '2pc-box+foot+lovely+navy': {
+    "Pillow Box": 2,
+    "Pillow Foot": 2,
+    "Pillow Grey": 2,
+    "Pillow Navy": 2
+  },
+  '2pc-box+foot+gp+lovely': {
+    "Pillow Box": 2,
+    "Pillow Foot": 2,
+    "Pillow Grey": 2,
+    "Pillow Bridge": 2
+  },
+  '2pc-box+dil+foot+pista': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Foot": 2,
+    "Pillow Pista": 2
+  },
+  '2pc-box+dil+gp+navy': {
+    "Pillow Box": 2,
+    "Pillow Dil": 2,
+    "Pillow Grey": 2,
+    "Pillow Navy": 2
+  },
+  '2pc-box+foot+gp+navy': {
+    "Pillow Box": 2,
+    "Pillow Foot": 2,
+    "Pillow Grey": 2,
+    "Pillow Navy": 2
+  },
+'4 pc navy square': {
+    "Pillow Navy": 4
+  },
+'6 pc navy square': {
+    "Pillow Navy": 6
+  },
+'4 pc lovely': {
+    "Pillow Bridge": 4
+  },
+'6 pc box': {
+    "Pillow Box": 6
+  },
+'6 pc foot': {
+    "Pillow Foot": 6
+  },
+'8 pc lovely': {
+    "Pillow Bridge": 8
+  },
+'8 pc box': {
+    "Pillow Box": 8
+  },
+'4 pc box': {
+    "Pillow Box": 4
+  },
+'8 pc navy square': {
+    "Pillow Navy": 8
+  },
+'6 pc dil': {
+    "Pillow Dil": 6
+  },
+'4 pc dil': {
+    "Pillow Dil": 4
+  },
+'4pc foot': {
+    "Pillow Foot": 4
+  },
+'8 pc dil': {
+    "Pillow Dil": 8
+  },
+'6 pc lovely': {
+    "Pillow Bridge": 6
+  },
+'8 pc foot': {
+    "Pillow Foot": 8
+  },
+'4 pc - diam': {
+    "Pillow Diam": 4
+  },
+'6 pc - diam': {
+    "Pillow Diam": 6
+  },
+'8 pc diam': {
+    "Pillow Diam": 8
   }
   // Add more SKU mappings here as needed
 };
