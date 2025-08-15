@@ -2941,6 +2941,7 @@ function displayStockArray() {
         { label: '(Dohar Single)-', pattern: /^S\/b\s*Dohar\s*/i },
         { label: '(Dohar)-',     pattern: /^Dohar\s*/i },
         { label: '(Dohar2Pc)-',  pattern: /^Dohar2Pc\s*/i },
+        { label: '(Pillows)-',  pattern: /^Pillow\s*/i },
         { label: '(Set)-',       pattern: /^Set\s*/i },
         { label: '(Com Double)-',pattern: /^Com\s*Double\s*/i },
         { label: '(Com Single)-',pattern: /^Com\s*Single\s*/i },
