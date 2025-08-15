@@ -1748,7 +1748,433 @@ const skuToStockMapping = {
   },
 '8 pc diam': {
     "Pillow Diam": 8
+  },
+'Harmony dohr2Pc': {
+    "Dohar Harmony": 1,
+    "Pillow Harmony": 2
+  },
+'Purple dohr2Pc': {
+    "Dohar Purple": 1,
+    "Pillow Purple": 2
+  },
+'CubeBrown dohr2Pc': {
+    "Dohar Cubebrown": 1,
+    "Pillow Cubebrown": 2
+  },
+'GeoFusion dohr2Pc': {
+    "Dohar Geofusion": 1,
+    "Pillow Geofusion": 2
+  },
+'Olive dohr2Pc': {
+    "Dohar Olive": 1,
+    "Pillow Olive": 2
+  },
+'Beige dohr2Pc': {
+    "Dohar Beige": 1,
+    "Pillow Beige": 2
+  },
+'Linear dohr2Pc': {
+    "Dohar Linear": 1,
+    "Pillow Linear": 2
+  },
+'Silver dohr2Pc': {
+    "Dohar Silver": 1,
+    "Pillow Silver": 2
+  },
+'Cube dohr2Pc': {
+    "Dohar Cube": 1,
+    "Pillow Cube": 2
+  },
+'ZigZag dohr2Pc': {
+    "Dohar ZigZag": 1,
+    "Pillow ZigZag": 2
+  },
+'Vintage dohr2Pc': {
+    "Dohar Vintage": 1,
+    "Pillow Vintage": 2
+  },
+'SS dohr2Pc': {
+    "Dohar SS": 1,
+    "Pillow SS": 2
+  },
+'Cambridge dohr2Pc': {
+    "Dohar Cambridge": 1,
+    "Pillow Cambridge": 2
+  },
+'Queensland dohr2Pc': {
+    "Dohar Queensland": 1,
+    "Pillow Queensland": 2
+  },
+'Perth dohr2Pc': {
+    "Dohar Perth": 1,
+    "Pillow Perth": 2
+  },
+'Toronto dohr2Pc': {
+    "Dohar Toronto": 1,
+    "Pillow Toronto": 2
+  },
+'Sydney dohr2Pc': {
+    "Dohar Sydney": 1,
+    "Pillow Sydney": 2
+  },
+'peach dohr2pc': {
+    "Dohar Peach": 1,
+    "Pillow Peach": 2
+  },
+'distorted dohr2pc': {
+    "Dohar Wine": 1,
+    "Pillow Wine": 2
+  },
+'diamond dohr2pc': {
+    "Dohar Diam": 1,
+    "Pillow Diam": 2
+  },
+'Royal dohr2pc': {
+    "Dohar Royal": 1,
+    "Pillow Royal": 2
+  },
+'dil dohr2pc': {
+    "Dohar Dil": 1,
+    "Pillow Dil": 2
+  },
+'Vegas dohr2pc': {
+    "Dohar Vegas": 1,
+    "Pillow Vegas": 2
+  },
+'Cannon dohr2pc': {
+    "Dohar Cannon": 1,
+    "Pillow Cannon": 2
+  },
+'multi triangle dohr2pc': {
+    "Dohar Multi Triangle": 1,
+    "Pillow Multi Triangle": 2
+  },
+'chino dohr2pc': {
+    "Dohar Chino": 1,
+    "Pillow Chino": 2
+  },
+'white floral dohr2pc': {
+    "Dohar Pulmeria": 1,
+    "Pillow Pulmeria": 2
+  },
+'box dohr2pc': {
+    "Dohar Box": 1,
+    "Pillow Box": 2
+  },
+'navy dohr2pc': {
+    "Dohar Navy": 1,
+    "Pillow Navy": 2
+  },
+'tokyo dohr2pc': {
+    "Dohar Tokyo": 1,
+    "Pillow Tokyo": 2
+  },
+'snake dohr2pc': {
+    "Dohar Snake": 1,
+    "Pillow Snake": 2
+  },
+'Brown dohr2pc': {
+    "Dohar Berlin": 1,
+    "Pillow Berlin": 2
+  },
+'Denver dohr2pc': {
+    "Dohar Denver": 1,
+    "Pillow Denver": 2
+  },
+'moon dohr2pc': {
+    "Dohar Moon": 1,
+    "Pillow Moon": 2
+  },
+'leaves dohr2pc': {
+    "Dohar Leaves": 1,
+    "Pillow Leaves": 2
+  },
+'Harmony Dohar': {
+    "Dohar Harmony": 1
+  },
+'Purple Dohar': {
+    "Dohar Purple": 1
+  },
+'CubeBrown Dohar': {
+    "Dohar Cubebrown": 1
+  },
+'Olive Dohar': {
+    "Dohar Olive": 1
+  },
+'GeoFusion Dohar': {
+    "Dohar Geofusion": 1
+  },
+'Beige Dohar': {
+    "Dohar Beige": 1
+  },
+'ZigZag Dohar': {
+    "Dohar ZigZag": 1
+  },
+'Linear Dohar': {
+    "Dohar Linear": 1
+  },
+'Cube Dohar': {
+    "Dohar Cube": 1
+  },
+'Vintage Dohar': {
+    "Dohar Vintage": 1
+  },
+'Silver Dohar': {
+    "Dohar Silver": 1
+  },
+'SS Dohar': {
+    "Dohar SS": 1
+  },
+'Cambridge Dohar': {
+    "Dohar Cambridge": 1
+  },
+'Queensland Dohar': {
+    "Dohar Queensland": 1
+  },
+'Perth dohar': {
+    "Dohar Perth": 1
+  },
+'Sydney dohar': {
+    "Dohar Sydney": 1
+  },
+'Toronto dohar': {
+    "Dohar Toronto": 1
+  },
+'tokyo dohar': {
+    "Dohar Tokyo": 1
+  },
+'Denver dohar': {
+    "Dohar Denver": 1
+  },
+'Vegas dohar': {
+    "Dohar Vegas": 1
+  },
+'Norway dohar': {
+    "Dohar Norway": 1
+  },
+'Confetti dohar': {
+    "Dohar Confetti": 1
+  },
+'Pink dohar': {
+    "Dohar Harmony": 1
+  },
+'Pink Lehr dohar |||': {
+    "Dohar PL": 1
+  },
+'Fiord Dohar': {
+    "Dohar Fiord": 1
+  },
+'Grey Lehr Dohr': {
+    "Dohar GL": 1
+  },
+'Golden Dohr': {
+    "Dohar Ecru": 1
+  },
+'Sea shell dohr': {
+    "Dohar Sea": 1
+  },
+'distorted double dohr': {
+    "Dohar Distorted": 1
+  },
+'box dohar': {
+    "Dohar Box": 1
+  },
+'snake double dohar': {
+    "Dohar Snake": 1
+  },
+'green leaves dohar': {
+    "Dohar Leaves": 1
+  },
+'moon mist dohar': {
+    "Dohar Moon": 1
+  },
+'multi triangle dohar': {
+    "Dohar Multi Triangle": 1
+  },
+'peach dohar': {
+    "Dohar Peach": 1
+  },
+'navy square dohar': {
+    "Dohar Navy": 1
+  },
+'Cannon pink dohar': {
+    "Dohar Cannon": 1
+  },
+'dil dohar': {
+    "Dohar Dil": 1
+  },
+'brown diamond double dohr': {
+    "Dohar Brown Diam": 1
+  },
+'chino grey dohar': {
+    "Dohar Chino": 1
+  },
+'green leaves dohr': {
+    "Dohar Leaves": 1
+  },
+'dust grey dohr': {
+    "Dohar Dust": 1
+  },
+'snake dohr': {
+    "Dohar Snake": 1
+  },
+'white floral dohr': {
+    "Dohar Pulmeria": 1
+  },
+'Wine Dohar': {
+    "Dohar Wine": 1
+  },
+'Royal Blue Dohar': {
+    "Dohar Royal": 1
+  },
+'Brown pashmina dohar': {
+    "Dohar Berlin": 1
+  },
+'green pashmina dohar': {
+    "Dohar Berlin": 1
+  },
+'multi diamond dohar': {
+    "Dohar Diam": 1
+  },
+'Purple s/b dohr': {
+    "S/b Dohar Purple": 1
+  },
+'Harmony s/b dohr': {
+    "S/b Dohar Harmony": 1
+  },
+'CubeBrown s/b dohr': {
+    "S/b Dohar Cubebrown": 1
+  },
+'GeoFusion s/b dohr': {
+    "S/b Dohar Geofusion": 1
+  },
+'Olive s/b dohr': {
+    "S/b Dohar Olive": 1
+  },
+'Beige s/b dohr': {
+    "S/b Dohar Beige": 1
+  },
+'Linear s/b dohr': {
+    "S/b Dohar Linear": 1
+  },
+'Vintage s/b dohr': {
+    "S/b Dohar Vintage": 1
+  },
+'ZigZag s/b dohr': {
+    "S/b Dohar Zigzag": 1
+  },
+'Cube s/b dohr': {
+    "S/b Dohar Cube": 1
+  },
+'Silver s/b dohr': {
+    "S/b Dohar Silver": 1
+  },
+'SS s/b dohr': {
+    "S/b Dohar SS": 1
+  },
+'Cambridge s/b dohr': {
+    "S/b Dohar Cambridge": 1
+  },
+'Queensland s/b dohr': {
+    "S/b Dohar Queensland": 1
+  },
+'Perth s/b dohr': {
+    "S/b Dohar Perth": 1
+  },
+'Sydney s/b dohr': {
+    "S/b Dohar Sydney": 1
+  },
+'Toronto s/b dohr': {
+    "S/b Dohar Toronto": 1
+  },
+'denver s/b dohr': {
+    "S/b Dohar Denver": 1
+  },
+'tokyo s/b dohr': {
+    "S/b Dohar Tokyo": 1
+  },
+'Vegas s/b dohr': {
+    "S/b Dohar Vegas": 1
+  },
+'Pink s/b dohr': {
+    "S/b Dohar Pink": 1
+  },
+'confetti s/b dohr': {
+    "S/b Dohar Confetti": 1
+  },
+'norway s/b dohr': {
+    "S/b Dohar Norway": 1
+  },
+'Fiord s/b dohr': {
+    "S/b Dohar Purple": 1
+  },
+'sea shell s/b dohr': {
+    "S/b Dohar Sea": 1
+  },
+'Golden s/b dohr': {
+    "S/b Dohar Ecru": 1
+  },
+'Grey Lehr s/b dohr': {
+    "S/b Dohar GL": 1
+  },
+'Pink Lehr s/b dohr': {
+    "S/b Dohar PL": 1
+  },
+'snakee s/b dohr': {
+    "S/b Dohar Snake": 1
+  },
+'box s/b dohar': {
+    "S/b Dohar Box": 1
+  },
+'multi triangle s/b dohar': {
+    "S/b Dohar Multi Triangle": 1
+  },
+'moon mist s/b dohar': {
+    "S/b Dohar Moon": 1
+  },
+'leaves s/b dohar': {
+    "S/b Dohar Leaves": 1
+  },
+'chino grey s/b dohar': {
+    "S/b Dohar Chino": 1
+  },
+'diamond s/b dohar': {
+    "S/b Dohar Diam": 1
+  },
+'navy square s/b dohar': {
+    "S/b Dohar Navy": 1
+  },
+'cannon pink s/b dohar': {
+    "S/b Dohar Cannon": 1
+  },
+'peach s/b dohar': {
+    "S/b Dohar Peach": 1
+  },
+'distorted lines s/b dohr': {
+    "S/b Dohar Distorted": 1
+  },
+'pink patti s/b dohar': {
+    "S/b Dohar SS": 1
+  },
+'white flowers s/b dohar': {
+    "S/b Dohar Pulmeria": 1
+  },
+'wine s/b dohar': {
+    "S/b Dohar Wine": 1
+  },
+'dil s/b dohar': {
+    "S/b Dohar Dil": 1
+  },
+'green s/b dohar': {
+    "S/b Dohar Green": 1
+  },
+'brown s/b dohar': {
+    "S/b Dohar Berlin": 1
+  },
+'royal s/b dohar': {
+    "S/b Dohar Royal": 1
   }
+
   // Add more SKU mappings here as needed
 };
 
