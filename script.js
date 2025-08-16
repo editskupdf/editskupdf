@@ -1410,7 +1410,7 @@ const skuToStockMapping = {
     "Pillow GL": 8
   },
   '6pc Grey': {
-    "Pillow Grey": 2
+    "Pillow Grey": 6
   },
   '6pc Yellow floral': {
     "Pillow Yellow Floral": 6
@@ -1835,7 +1835,7 @@ const skuToStockMapping = {
   '2pc-box+foot+lovely+navy': {
     "Pillow Box": 2,
     "Pillow Foot": 2,
-    "Pillow Grey": 2,
+    "Pillow Bridge Diam": 2,
     "Pillow Navy": 2
   },
   '2pc-box+foot+gp+lovely': {
