@@ -355,6 +355,50 @@ let stockArray = {
 "Dohar Brown Diam": 0,
 "Dohar Dust": 0,
 "Dohar Single Purple": 0,
+"Dohar Single Harmony": 0,
+"Dohar Single Cubebrown": 0,
+"Dohar Single Geofusion": 0,
+"Dohar Single Olive": 0,
+"Dohar Single Beige": 0,
+"Dohar Single Linear": 0,
+"Dohar Single Vintage": 0,
+"Dohar Single Zigzag": 0,
+"Dohar Single Cube": 0,
+"Dohar Single Silver": 0,
+"Dohar Single SS": 0,
+"Dohar Single Cambridge": 0,
+"Dohar Single Queensland": 0,
+"Dohar Single Perth": 0,
+"DDohar Single Sydney": 0,
+"Dohar Single Toronto": 0,
+"Dohar Single Denver": 0,
+"Dohar Single Tokyo": 0,
+"Dohar Single Vegas": 0,
+"Dohar Single Pink": 0,
+"Dohar Single Confetti": 0,
+"Dohar Single Norway": 0,
+"Dohar Single Fiord": 0,
+"Dohar Single Sea": 0,
+"Dohar Single Ecru": 0,
+"Dohar Single GL": 0,
+"Dohar Single PL": 0,
+"Dohar Single Snake": 0,
+"Dohar Single Box": 0,
+"Dohar Single Multi Triangle": 0,
+"Dohar Single Moon": 0,
+"Dohar Single Leaves": 0,
+"Dohar Single Chino": 0,
+"ohar Single Diam": 0,
+"Dohar Single Navy": 0,
+"Dohar Single Cannon": 0,
+"Dohar Single Peach": 0,
+"DDohar Single Distorted": 0,
+"Dohar Single Pulmeria": 0,
+"Dohar Single Wine": 0,
+"Dohar Single Dil": 0,
+"Dohar Single Green": 0,
+"Dohar Single Berlin": 0,
+"Dohar Single Royal": 0,
 "1+1 Purple": 0,
 "1+1 Florica": 0,
 "1+1 Harmony": 0,
@@ -2738,60 +2782,79 @@ async function processPDF() {
     console.log('text >>> ', text);
     
     // Find all SKU matches on this specific detail page
-    const skuMatches = text.match(/\(\s*([^)]+?)\s*\)\s*HSN/gi);
-    const orderItemsOnThisPage = [];
+    // const skuMatches = text.match(/\(\s*([^)]+?)\s*\)\s*HSN/gi);
+    // const orderItemsOnThisPage = [];
     
-    if (skuMatches) {
-      for (const match of skuMatches) {
-        const skuMatch = match.match(/\(\s*([^)]+?)\s*\)\s*HSN/i);
-        if (skuMatch) {
-          const sku = skuMatch[1].trim();
+    // if (skuMatches) {
+    //   for (const match of skuMatches) {
+    //     const skuMatch = match.match(/\(\s*([^)]+?)\s*\)\s*HSN/i);
+    //     if (skuMatch) {
+    //       const sku = skuMatch[1].trim();
           
-          // Find quantity for this SKU - look for quantity in table structure
-          // Pattern: HSN:#### ₹price qty ₹total
-          const hsnPattern = new RegExp(`HSN:\\d+\\s+₹[\\d,\\.]+\\s+(\\d+)`, 'i');
-          const qtyMatch = text.match(hsnPattern);
+    //       // Find quantity for this SKU - look for quantity in table structure
+    //       // Pattern: HSN:#### ₹price qty ₹total
+    //       const hsnPattern = new RegExp(`HSN:\\d+\\s+₹[\\d,\\.]+\\s+(\\d+)`, 'i');
+    //       const qtyMatch = text.match(hsnPattern);
           
-          let qty = null;
-          if (qtyMatch) {
-            qty = qtyMatch[1];
-          } else {
-            // Fallback to original method
-            const allNumbers = text.match(/\d+/g);
-            const qtyIndex = text.search(/Qty/i);
-            if (qtyIndex !== -1 && allNumbers) {
-              const afterQty = text.substring(qtyIndex);
-              const nextNumberMatch = afterQty.match(/\d+/);
-              if (nextNumberMatch) {
-                qty = nextNumberMatch[0];
-              }
-            }
-          }
+    //       let qty = null;
+    //       if (qtyMatch) {
+    //         qty = qtyMatch[1];
+    //       } else {
+    //         // Fallback to original method
+    //         const allNumbers = text.match(/\d+/g);
+    //         const qtyIndex = text.search(/Qty/i);
+    //         if (qtyIndex !== -1 && allNumbers) {
+    //           const afterQty = text.substring(qtyIndex);
+    //           const nextNumberMatch = afterQty.match(/\d+/);
+    //           if (nextNumberMatch) {
+    //             qty = nextNumberMatch[0];
+    //           }
+    //         }
+    //       }
           
-          // console.log(`Found SKU: ${sku}, Quantity: ${qty}`);
+    //       // console.log(`Found SKU: ${sku}, Quantity: ${qty}`);
           
-          if (qty) {
-            const orderQty = parseInt(qty);
-            orderItemsOnThisPage.push({
-              sku: sku,
-              qty: orderQty
-            });
+    //       if (qty) {
+    //         const orderQty = parseInt(qty);
+    //         orderItemsOnThisPage.push({
+    //           sku: sku,
+    //           qty: orderQty
+    //         });
             
-            // Process stock requirements based on SKU mapping
-            if (skuToStockMapping[sku]) {
-              // console.log(`Processing SKU: ${sku} with quantity: ${orderQty}`);
+    //         // Process stock requirements based on SKU mapping
+    //         if (skuToStockMapping[sku]) {
+    //           // console.log(`Processing SKU: ${sku} with quantity: ${orderQty}`);
               
-              for (const [stockItem, baseQty] of Object.entries(skuToStockMapping[sku])) {
-                const totalToAdd = baseQty * orderQty;
-                stockArray[stockItem] += totalToAdd;
+    //           for (const [stockItem, baseQty] of Object.entries(skuToStockMapping[sku])) {
+    //             const totalToAdd = baseQty * orderQty;
+    //             stockArray[stockItem] += totalToAdd;
                 
-                // console.log(`Added ${totalToAdd} to ${stockItem} (base: ${baseQty} * order qty: ${orderQty})`);
-              }
-            } else {
-              console.log(`No stock mapping found for SKU: ${sku}`);
-            }
-          }
+    //             // console.log(`Added ${totalToAdd} to ${stockItem} (base: ${baseQty} * order qty: ${orderQty})`);
+    //           }
+    //         } else {
+    //           console.log(`No stock mapping found for SKU: ${sku}`);
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    const orderItemsOnThisPage = [];
+    const rowRegex = /\(\s*([^)]+?)\s*\)\s*HSN:\s*\d+\s+₹[\d,\.]+(?:\s+-?₹[\d,\.]+)?\s+(\d+)/gi;
+
+    let m;
+    while ((m = rowRegex.exec(text)) !== null) {
+      const sku = m[1].trim();
+      const orderQty = parseInt(m[2], 10);
+
+      orderItemsOnThisPage.push({ sku, qty: orderQty });
+
+      if (skuToStockMapping[sku]) {
+        for (const [stockItem, baseQty] of Object.entries(skuToStockMapping[sku])) {
+          const totalToAdd = baseQty * orderQty;
+          stockArray[stockItem] = (stockArray[stockItem] || 0) + totalToAdd;
         }
+      } else {
+        console.log(`No stock mapping found for SKU: ${sku}`);
       }
     }
     
@@ -2938,7 +3001,7 @@ function displayStockArray() {
         { label: '(60x78)-',     pattern: /^60x78\s*/i },
         { label: '(36x78)-',     pattern: /^36x78\s*/i },
         { label: '(72x72)-',     pattern: /^72x72\s*/i },
-        { label: '(Dohar Single)-', pattern: /^S\/b\s*Dohar\s*/i },
+        { label: '(Dohar Single)-', pattern: /^Dohar\s*Single\s*/i },
         { label: '(Dohar)-',     pattern: /^Dohar\s*/i },
         { label: '(Dohar2Pc)-',  pattern: /^Dohar2Pc\s*/i },
         { label: '(Pillows)-',  pattern: /^Pillow\s*/i },
