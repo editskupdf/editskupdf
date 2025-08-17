@@ -488,7 +488,9 @@ let stockArray = {
 "Set Car": 0,
 "Set Horse": 0,
 "Set Teddy": 0,
-"Set Fish": 0
+"Set Fish": 0,
+"Pillow Brown Purana": 0,
+"72x72 Berlin": 0
 };
 
 // Hardcoded SKU to stock mapping
@@ -1745,7 +1747,7 @@ const skuToStockMapping = {
     "Pillow Green": 2
   },
   '2 pc - brown': {
-    "Pillow Berlin": 2
+    "Pillow Brown Purana": 2
   },
   '2 pc - grey lehr': {
     "Pillow GL": 2
@@ -2716,6 +2718,9 @@ const skuToStockMapping = {
   },
   'grey donkey com set': {
     "Set Horse": 1
+  },
+  '72x72 brown': {
+    "72x72 Berlin": 1
   }
 
   // Add more SKU mappings here as needed
