@@ -784,7 +784,7 @@ const skuToStockMapping = {
   'green leaves s/b fitted.': {
     "36x78 leaves": 1
   },
-  'white floral fitted..': {
+  'white floral fitted.': {
     "Fitted Pulmeria": 1
   },
   'royal s/b fitted .': {
