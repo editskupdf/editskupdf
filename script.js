@@ -2721,6 +2721,10 @@ const skuToStockMapping = {
   },
   '72x72 brown': {
     "72x72 Berlin": 1
+  },
+  'sea shell 1 pillow + s/b dohr': {
+    "Dohar Single Sea": 1,
+    "Pillow Sea" : 1
   }
 
   // Add more SKU mappings here as needed
