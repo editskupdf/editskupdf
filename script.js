@@ -778,7 +778,7 @@ const skuToStockMapping = {
   'football s/b fitted..': {
     "36x78 football": 1
   },
-  'green kashmira s/b fitted..': {
+  'green kashmira s/b fitted.': {
     "36x78 green": 1
   },
   'green leaves s/b fitted.': {
