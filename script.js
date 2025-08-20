@@ -2911,7 +2911,7 @@ async function processPDF() {
             barcodePage.drawText(qtyText, {
               x: textX,
               y: textY,
-              size: 20,
+              size: 26,
               font: font,
               color: PDFLib.rgb(0, 0, 0)
             });
@@ -2923,19 +2923,19 @@ async function processPDF() {
             barcodePage.drawText(restText, {
               x: textX + qtyWidth,
               y: textY,
-              size: 16,
+              size: 20,
               font: font,
               color: PDFLib.rgb(0, 0, 0)
             });
             
-            console.log(`Placing quantity "${qtyText}" (size 18) and "${restText}" (size 12) at x: ${textX}, y: ${textY}`);
+            console.log(`Placing quantity "${qtyText}" (size 18) and "${restText}" (size 12) at x: ${textX}, y: ${textY} at page number : ${barcodePageIndex}`);
           } else {
             // Quantity is 1, draw normally
             insertText = `${item.qty} * ${item.sku}`;
             barcodePage.drawText(insertText, {
               x: textX,
               y: textY,
-              size: 12,
+              size: 20,
               font: font,
               color: PDFLib.rgb(0, 0, 0)
             });
